@@ -52,7 +52,7 @@ def processInputs(alg, parameters, context, feedback):
 
     # Grab the projected Crs
     crs = alg.parameterAsCrs(parameters, 'crs', context)
-    alg.commands.append('g.proj -c proj4="{}"'.format(
+    alg.commands.append('g.proj -c proj4="{}" location={}'.format(
         crs.toProj4(), newLocation))
 
     # Remove crs parameter
