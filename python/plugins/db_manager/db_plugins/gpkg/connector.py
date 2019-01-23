@@ -228,7 +228,7 @@ class GPKGDBConnector(DBConnector):
             "TINYINT",
             "SMALLINT",
             "DOUBLE",
-            "FLOAT"
+            "FLOAT",
             "DATE",
             "DATETIME",
             "BOOLEAN",
